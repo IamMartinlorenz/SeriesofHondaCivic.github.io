@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Cars Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav-container">
+        <a href="" class="logo"><h3>HONDA CIVIC</h3></a>
+        <ul class="nav-link">
+          <li><a href="#Home" style="--i: 1" class="">Home</a></li>
+          <li><a href="#About" style="--i: 2">About</a></li>
+          <li><a href="#Services" style="--i: 3">Services</a></li>
+          <li><a href="#Featured" style="--i: 4">Featured</a></li>
+        </ul>
+        <ul class="social-link">
+          <li>
+            <a href="" style="--i: 1"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="" style="--i: 2"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="" style="--i: 3"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+    
+      </div>
+    </nav>
+
+    <header>
+      <div class="container header-container">
+        <div class="header-left">
+          <h1 id="car-name">SiR 2000</h1>
+          <h3>The Power of Dreams</h3>
+          <p id="car-info">
+            The Si (Sport Injected) trim was introduced for the third generation
+            of Honda Civics in both Japan and North America. In Canada and
+            elsewhere, the trim became known as the SiR for the sixth and
+            seventh generations as the "Si" badge was used for the equivalent to
+            the USDM Civic EX model.
+          </p>
+          <a href="" class="btn">Explore More</a>
+        </div>
+        <div class="header-right">
+          <div class="sq-box">
+            <img src="img/civic1.png" class="civic" />
+          </div>
+        </div>
+        <ul class="thumb">
+          <li>
+            <img
+              src="img/civic1.png"
+              onclick="imgSlider('img/civic1.png');changeBgColor('#b50000')"
+            />
+          </li>
+          <li>
+            <img
+              src="img/civic2.png"
+              onclick="imgSlider('img/civic2.png');changeBgColor('#0058ff')"
+            />
+          </li>
+          <li>
+            <img
+              src="img/civic3.png"
+              onclick="imgSlider('img/civic3.png');changeBgColor('#f1c200')"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="sq-box2"></div>
+    </header>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".civic").src = anything;
+      }
+      function changeBgColor(color) {
+        const sec = document.querySelector(".sq-box2", ".sq-box");
+        sec.style.backgroundColor = color;
+      }
+    </script>
+
+    <body>
+      <img src="img/honda-xxl.png" id="hello" />
+    </body>
+    <!-- -----------------About-------------------- -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/IMG10.jpg" alt="">
+      </div>
+      
+      <div class="about-text">
+        <h2>About</h2>
+        <p>The Honda Civic is a series of automobiles manufactured by Honda since
+          1972. Since 2000, the Civic has been categorized as a compact car,
+          while previously it occupied the subcompact class. As of 2021, the
+          Civic is positioned between the Honda Fit/City and Honda Accord in
+          Honda's global car line-up. The first-generation Civic was introduced
+          in July 1972 as a two-door coupe model, followed by a three-door
+          hatchback that September. With a 1,169 cc transverse engine and
+          front-wheel drive like the British Mini, the car provided good
+          interior space despite overall small dimensions. Initially gaining a
+          reputation for being fuel-efficient, reliable and environmentally
+          friendly, later iterations have become known for performance and
+          sportiness, especially the Civic Type R, Civic VTi, Civic GTi and
+          Civic SiR/Si.</p>
+          <a href="#" class="btn">Learn More</a>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- ----------------------SERVICES---------------------- -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="Services" id="Services">
+      <div class="heading">
+        <h1>Services</h1>
+      </div>
+      <div class="Services-container">
+        <div class="box">
+          <div class="box-img">
+            <img src="img/Change Oil.png" alt="" />
+          </div>
+          <div class="stars">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACb0lEQVRIS8XWS+gPURTA8c8fobDAgjyWlB0LKUkUIbLwXikslGyQhRVLC4+FhSwQSnltvBcKiWQnG2QjrxIL75RXR3f+3cZ/Zn7zE/9b08zce8/5nnvOuffcHv3UevqJ62/Ai5LRV7oxvlvwbNxMwPi+1RbeLfgyihVfwpL/AZ6MRxnoJ6aU+hrt6GbFx7A2af6OgTiK9Y20bEJb8Dg8xaCk4wxW4hvG43Wn8LbgPdiWKZ+JO+l/N3b8C/AIvEC8ixaG38UMfMAYfOkEXl7xVETyhNvKzwQMLikN+VU4lfq/4mUyMIzMn4e4n1tcfOcKOjE65gR4QIp7GNbUVuN0IVhMXojYn23iXswN2ThIxiISsHhGZ5b8wDxcL4Pjfw1OtoDXGRm6YutFeCIEK3CxL1cXfW3gVeBd2JkURtLFKXc7j0OVYKfwsnysLlYZ8tHeYi4elIPf5Komt+fyI3EesxLkeYI+6SvjmhKpaeW5/AJcTZCARbK9qkrzJnBslU8YWqEglx+C9ymZ9mNr3d5qAk/HvRoFcYp9zMYjaxcjDouoWJWtCbwF+2rkI45RqX7vTWzGgfQ9ETHeZ2sCn8OyOsvTWJTFMDI88Cz1bcLBbsFvkJ8+uZ6IfVwChqfOKIlRkyO+k3ABS7sBh/DjCsEb2WXgOOZk88KgYfiMUenU+kNNnavX4UhJIk6h7ThU6t+IvQmYD83Htb6MrwMfLl1nQkG4sohhWV8kUxgahaBokZj5xaF3oA58FsvxLu3J8uqrwrchxTkSLXTE1aiVq6chTqMTqaB3kNy9U6I2R6jCa3ExaAVuA2o9t2kft1bYqcAvTSVqH7VRzq0AAAAASUVORK5CYII="
+            />
+          </div>
+          <h2>Change Oil</h2>
+          <span>P2,350</span>
+          <a href="#" class="btn">Add to Schedule</a>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="img/Battery.png" alt="" />
+          </div>
+          <div class="stars">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACb0lEQVRIS8XWS+gPURTA8c8fobDAgjyWlB0LKUkUIbLwXikslGyQhRVLC4+FhSwQSnltvBcKiWQnG2QjrxIL75RXR3f+3cZ/Zn7zE/9b08zce8/5nnvOuffcHv3UevqJ62/Ai5LRV7oxvlvwbNxMwPi+1RbeLfgyihVfwpL/AZ6MRxnoJ6aU+hrt6GbFx7A2af6OgTiK9Y20bEJb8Dg8xaCk4wxW4hvG43Wn8LbgPdiWKZ+JO+l/N3b8C/AIvEC8ixaG38UMfMAYfOkEXl7xVETyhNvKzwQMLikN+VU4lfq/4mUyMIzMn4e4n1tcfOcKOjE65gR4QIp7GNbUVuN0IVhMXojYn23iXswN2ThIxiISsHhGZ5b8wDxcL4Pjfw1OtoDXGRm6YutFeCIEK3CxL1cXfW3gVeBd2JkURtLFKXc7j0OVYKfwsnysLlYZ8tHeYi4elIPf5Komt+fyI3EesxLkeYI+6SvjmhKpaeW5/AJcTZCARbK9qkrzJnBslU8YWqEglx+C9ymZ9mNr3d5qAk/HvRoFcYp9zMYjaxcjDouoWJWtCbwF+2rkI45RqX7vTWzGgfQ9ETHeZ2sCn8OyOsvTWJTFMDI88Cz1bcLBbsFvkJ8+uZ6IfVwChqfOKIlRkyO+k3ABS7sBh/DjCsEb2WXgOOZk88KgYfiMUenU+kNNnavX4UhJIk6h7ThU6t+IvQmYD83Htb6MrwMfLl1nQkG4sohhWV8kUxgahaBokZj5xaF3oA58FsvxLu3J8uqrwrchxTkSLXTE1aiVq6chTqMTqaB3kNy9U6I2R6jCa3ExaAVuA2o9t2kft1bYqcAvTSVqH7VRzq0AAAAASUVORK5CYII="
+            />
+          </div>
+          <h2>Battery Check</h2>
+          <span>P3,000</span>
+          <a href="#" class="btn">Add to Schedule</a>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="img/Tire.png" alt="" />
+          </div>
+          <div class="stars">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB7UlEQVRIS8XWy+tNURTA8c+vJIUJA/KYKjMjQ1EUJSXPkfIoZUgG/gMDj6EMEANFMvGaKCQDQ5lQJvIqMZCQElp1bp22c+4+e9/fz2/V6dy7z17ru/Zaa++9psySTM0S1yTgLY3T92qcrwWvw6MGGL8fl8JrwXcxWvEdbP0f4FV42QL9wepkLOtHzYovY19i+RIOZGmtCaXgZXiNOQnkF5bj41B4KfgUjvUYP4kTMwFeiHeId5d8xRL8GAJPV7wGUTwRtvRZgbkZoz/xvnEwnGw/L/BspN8G78a1Id5OMGcProd+G7wZsT9L8z7Uj9/YiAcpOP7vxdUZgEcKduJ2V6hHY9MNj6KLU+5JOzR9YZ0u+GdswPM0H+PyOSn8bQN91VUEuUKqhQcsbq0PfZWXA8fRGDmaN7R0m3lncXScTg68Fk8LoTE9Dou4sXolBw6vT1eAQ2UlIs+dkgPfxPZK8BGcqwV/wuIe5W+IJmBBz/db2FYDTjuNto2HrWbgCtZ3AL5jEeLU+kfGhTo6iguJRlT4cZxPxg83tTA/Gd+E+6Xgi9jfUgoD4cybnvBFMYVOXAQjOdPXOIxb8Q3swJdmT4bRIXIQsY+jYQgbu0pXvBSHEI1cXOglEk1DRCtSFY1BUY5LQMVzc/u42OBQhb+aSVMflMVe6wAAAABJRU5ErkJggg=="
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACb0lEQVRIS8XWS+gPURTA8c8fobDAgjyWlB0LKUkUIbLwXikslGyQhRVLC4+FhSwQSnltvBcKiWQnG2QjrxIL75RXR3f+3cZ/Zn7zE/9b08zce8/5nnvOuffcHv3UevqJ62/Ai5LRV7oxvlvwbNxMwPi+1RbeLfgyihVfwpL/AZ6MRxnoJ6aU+hrt6GbFx7A2af6OgTiK9Y20bEJb8Dg8xaCk4wxW4hvG43Wn8LbgPdiWKZ+JO+l/N3b8C/AIvEC8ixaG38UMfMAYfOkEXl7xVETyhNvKzwQMLikN+VU4lfq/4mUyMIzMn4e4n1tcfOcKOjE65gR4QIp7GNbUVuN0IVhMXojYn23iXswN2ThIxiISsHhGZ5b8wDxcL4Pjfw1OtoDXGRm6YutFeCIEK3CxL1cXfW3gVeBd2JkURtLFKXc7j0OVYKfwsnysLlYZ8tHeYi4elIPf5Komt+fyI3EesxLkeYI+6SvjmhKpaeW5/AJcTZCARbK9qkrzJnBslU8YWqEglx+C9ymZ9mNr3d5qAk/HvRoFcYp9zMYjaxcjDouoWJWtCbwF+2rkI45RqX7vTWzGgfQ9ETHeZ2sCn8OyOsvTWJTFMDI88Cz1bcLBbsFvkJ8+uZ6IfVwChqfOKIlRkyO+k3ABS7sBh/DjCsEb2WXgOOZk88KgYfiMUenU+kNNnavX4UhJIk6h7ThU6t+IvQmYD83Htb6MrwMfLl1nQkG4sohhWV8kUxgahaBokZj5xaF3oA58FsvxLu3J8uqrwrchxTkSLXTE1aiVq6chTqMTqaB3kNy9U6I2R6jCa3ExaAVuA2o9t2kft1bYqcAvTSVqH7VRzq0AAAAASUVORK5CYII="
+            />
+          </div>
+          <h2>Tire Alignment</h2>
+          <span>P1,200</span>
+          <a href="#" class="btn">Add to Schedule</a>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- ----------------FEATURED------------------>
+
+    <br>
+    <br>
+    <br>
+    <section class="Featured" id="Featured">
+      <div class="Featured-img">
+        <img src="img/VTEC.jpg" alt="">
+      </div>
+      
+      <div class="Featured-text">
+        <h2>Featured</h2>
+        <h4>VTEC®</h4>
+        <p>Variable Valve Timing and Lift Electronic Control, or VTEC®, debuted in the late 1980s as a way to extract maximum horsepower and torque from smaller displacement engines without using turbocharging. As the first practical, reliable and commercially successful variable valve timing and lift technology, VTEC spurred an industry-wide movement to use variable valve timing in engines. VTEC made its commercial debut on the 1989 Honda Integra XSi in Japan, with stunning results. Active on both the intake and exhaust cams of this DOHC 1.6-liter engine (B16A), it produced 160 horsepower at an incredible 7,600 rpm. The broad torque curve peaked at 111 lb.-ft. at 7,000 rpm, but offered most of that torque well below that lofty figure. A short time later, VTEC was introduced on the 1991 Acura NSX, which developed 270 horsepower and 210 lb.-ft. of torque from its 3.0-liter V6 engine (C30A).</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!-- ------------------FOOTTER------------------ -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Featured</a></li>
+      </ul>
+      <p>©2023 Honda Civic | All Rights Reserved.</p>
+    </footer>
+    <!-- ----------------Link to custom Js-------------------- -->
+    <script src="main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
